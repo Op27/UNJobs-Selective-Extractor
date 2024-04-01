@@ -2,6 +2,8 @@
 
 The **UNJobs-Selective-Extractor** is a Python-based tool designed to automate the collection of job listings from the UNJobs website. It not only aggregates a comprehensive list of opportunities but also filters these listings based on user-defined criteria, making it easier to find relevant UN job opportunities.
 
+https://github.com/Op27/UNJobs-Selective-Extractor/assets/39921621/5c97b04c-7a6a-4dcf-bcb4-b7518eebc71e
+
 ## Features
 - **Data Extraction**: Automatically scrapes job listings from the UNJobs website.
 - **Selective Filtering**: Users can specify criteria to filter the extracted job listings, focusing on opportunities that match their skills and interests.
