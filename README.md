@@ -36,6 +36,31 @@ To start using the **UNJobs-Selective-Extractor**, follow these instructions:
 2. When prompted, enter your criteria for job listings (i.e., name of targe country or url).
 3. The script will scrape, filter, and save the job listings based on your input.
 
+## Customizing Job Matching Keywords
+
+The **UNJobs-Selective-Extractor** is designed with flexibility in mind, allowing users to customize the criteria for job matching to suit their specific interests and career goals. The core of this customization lies in the ability to modify the list of keywords that the script uses to filter job listings.
+
+### Subject Line for Customization
+
+In the script, the line responsible for defining the keywords for job matching is as follows:
+
+```bash
+keywords = ['Data', 'data', 'Information', 'information', 'analysis', 'Analysis', 'Engineer', 'Developer', 'GIS', 'Geographic']
+```
+
+This list of keywords is fully customizable. To tailor the job search to your areas of interest, you can modify this list by adding or replacing keywords. For example, if you are interested in job opportunities for coordinator or associate position in the field of GBV, you might replace keywords with such as 'Coordinator', 'Associate', or 'GBV'. 
+
+### How to Customize
+To customize the keywords for job matching:
+1. Open the script using your preferred text editor or IDE.
+2. Locate the keywords line as shown above.
+3. Modify the list by adding or removing keywords according to your preferences, ensuring each keyword is enclosed in quotes and separated by commas.
+4. Save your changes and run the script as usual to see job listings filtered based on your customized keywords.
+
+By customizing the keywords, you make the UNJobs-Selective-Extractor more relevant to your personal job search, enhancing the tool's utility and effectiveness.
+
+
+
 ## Disclaimer
 
 ### Web Scraping Legal Considerations
