@@ -14,6 +14,21 @@ import sys  # For system-specific parameters and functions
 # Prompt the user for input, accepting either a country name or a full URL
 user_input = input(' 🌐  Enter the country name or the full URL for job listing -> ')
 
+# Define the default keywords list
+keywords = ['Data', 'data', 'Information', 'information', 'analysis', 'Analysis', 'Engineer', 'Developer', 'GIS', 'Geographic']
+
+# Convert the list of default keywords into a string to display to the user
+default_keywords_str = ", ".join(keywords)
+
+# Prompt the user with a simple yes/no question
+user_response = input(f"\nThe default keywords for job searches are: {default_keywords_str}. \nDo you wish to enter your own keywords instead? (yes/no): ").strip().lower()
+
+if user_response == 'yes':
+    custom_keywords_input = input("Enter your custom keywords, separated by commas (e.g., Analyst, Software, Research): ")
+    # Overwrite the default keywords list with the user's custom list
+    keywords = [keyword.strip() for keyword in custom_keywords_input.split(',')]
+# If the user answers 'no', the script continues using the predefined list of keywords
+
 # Define the base URL for UN jobs duty stations
 base_site_url = "https://unjobs.org/duty_stations/"
 
@@ -91,7 +106,6 @@ sys.stdout.flush()
 # Filter the collected job data for priority roles based on keywords
 print(' 📊  Filtering the data based on the priority criteria...')
 
-keywords = ['Data', 'data', 'Information', 'information', 'analysis','Analysis','Engineer','Developer','GIS','Geographic']
 priority_data = [job for job in job_data if any(keyword in job['title'] for keyword in keywords)] # Adjust key words based on your needs
 
 # Check if priority_data is empty
