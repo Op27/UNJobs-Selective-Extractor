@@ -1,6 +1,6 @@
 # UNJobs-Selective-Extractor
 
-The **UNJobs-Selective-Extractor** is a Python-based tool designed to automate the collection of job listings from the UNJobs website. It not only aggregates a comprehensive list of opportunities but also filters these listings based on user-defined criteria, making it easier to find relevant UN job opportunities.
+The **UNJobs-Selective-Extractor** is a Python-based tool designed to automate the collection of job listings from the UNJobs website. It aggregates a comprehensive list of job opportunities and offers users the flexibility to filter these listings through interactive customization. Users can tailor their search to focus on opportunities that match either a set of default criteria or their specific interests and career goals. This feature ensures a personalized job hunting experience.
 
 https://github.com/Op27/UNJobs-Selective-Extractor/assets/39921621/7d947b4c-5779-47cc-817a-8353eff03392
 
@@ -35,33 +35,26 @@ To start using the **UNJobs-Selective-Extractor**, follow these instructions:
     ```bash
     python main.py
     ```
-2. When prompted, enter your criteria for job listings (i.e., name of targe country or url).
-3. The script will scrape, filter, and save the job listings based on your input.
+2. When prompted, enter your criteria for job listings (e.g., name of target country or URL).
+3. You will be asked if you want to use the default keywords for filtering jobs or enter your own. The default keywords are [Data, data, Information, information, analysis, Analysis, Engineer, Developer, GIS, Geographic].
+   - If you choose to enter your customized keywords, follow the prompt to input your custom keywords separated by commas. For example, you can respond like the following:
+        ```bash
+        Enter your custom keywords, separated by commas (e.g., Analyst, Software, Research): Coordinator, Assistant
+        ```
+5. The script will scrape, filter, and save the job listings based on your inputs.
+
 
 ## Customizing Job Matching Keywords
 
-The **UNJobs-Selective-Extractor** is designed with flexibility in mind, allowing users to customize the criteria for job matching to suit their specific interests and career goals. The core of this customization lies in the ability to modify the list of keywords that the script uses to filter job listings.
+The **UNJobs-Selective-Extractor** offers flexibility in filtering job listings by allowing users to customize the job matching keywords interactively.
 
-### Subject Line for Customization
+### Interactive Customization
+Upon running the script, users are prompted to decide whether to use the default set of keywords or to input their own. This feature ensures that users can tailor the job search to their specific interests and career goals without manually editing the script.
 
-In the script, the line responsible for defining the keywords for job matching is as follows:
+- **Default Keywords**: The default set includes [Data, data, Information, information, analysis, Analysis, Engineer, Developer, GIS, Geographic].
+- **Entering Custom Keywords**: If opting for custom keywords, you'll be prompted to enter them separated by commas (e.g., Coordinator, Associate, GBV).
 
-```bash
-keywords = ['Data', 'data', 'Information', 'information', 'analysis', 'Analysis', 'Engineer', 'Developer', 'GIS', 'Geographic']
-```
-
-This list of keywords is fully customizable. To tailor the job search to your areas of interest, you can modify this list by adding or replacing keywords. For example, if you are interested in job opportunities for coordinator or associate position in the field of GBV, you might replace keywords with such as 'Coordinator', 'Associate', or 'GBV'. 
-
-### How to Customize
-To customize the keywords for job matching:
-1. Open the script using your preferred text editor or IDE.
-2. Locate the keywords line as shown above.
-3. Modify the list by adding or removing keywords according to your preferences, ensuring each keyword is enclosed in quotes and separated by commas.
-4. Save your changes and run the script as usual to see job listings filtered based on your customized keywords.
-
-By customizing the keywords, you make the UNJobs-Selective-Extractor more relevant to your personal job search, enhancing the tool's utility and effectiveness.
-
-
+By engaging with this interactive feature, you enhance the tool's utility, making your job search more targeted and efficient.
 
 ## Disclaimer
 
