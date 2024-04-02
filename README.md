@@ -54,11 +54,12 @@ In main.py, find this line:
 file_path = rf'INSERT_PATH_TO_USER_FOLDER_HERE/scraping_unjobs/{file_name}'
 ```
 
-Replace INSERT_PATH_TO_USER_FOLDER_HERE with the path to where you want the files saved. For example:
+Replace `INSERT_PATH_TO_USER_FOLDER_HERE` with the path to where you want the files saved. For example:
 
 - On Windows: C:/Users/YourName/Documents/UNJobs/{file_name}
 - On Mac/Linux: /Users/YourName/Documents/UNJobs/{file_name}
-  \n Remember to change YourName to your actual username.
+
+<br>Remember to change `YourName` to your actual username.
 
 ## Customizing Job Matching Keywords
 
