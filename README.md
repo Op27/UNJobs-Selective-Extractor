@@ -35,7 +35,10 @@ To start using the **UNJobs-Selective-Extractor**, follow these instructions:
     ```bash
     python main.py
     ```
-2. When prompted, enter your criteria for job listings (e.g., name of target country or URL).
+2. When prompted, enter your criteria for job listings (e.g., name of target country or URL). For example, you can respond like the following:
+    ```bash
+    🌐  Enter the country name or the full URL for job listing -> Ukraine
+    ```
 3. You will be asked if you want to use the default keywords for filtering jobs or enter your own. The default keywords are [Data, data, Information, information, analysis, Analysis, Engineer, Developer, GIS, Geographic].
    - If you choose to enter your customized keywords, follow the prompt to input your custom keywords separated by commas. For example, you can respond like the following:
         ```bash
