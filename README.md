@@ -46,6 +46,19 @@ To start using the **UNJobs-Selective-Extractor**, follow these instructions:
         ```
 5. The script will scrape, filter, and save the job listings based on your inputs.
 
+### Configuring the Save Location
+To ensure the UNJobs-Selective-Extractor saves files where you can easily find them, you'll need to set the correct save path in the script:
+
+In main.py, find this line:
+```bash
+file_path = rf'INSERT_PATH_TO_USER_FOLDER_HERE/scraping_unjobs/{file_name}'
+```
+
+Replace INSERT_PATH_TO_USER_FOLDER_HERE with the path to where you want the files saved. For example:
+
+- On Windows: C:/Users/YourName/Documents/UNJobs/{file_name}
+- On Mac/Linux: /Users/YourName/Documents/UNJobs/{file_name}
+  \n Remember to change YourName to your actual username.
 
 ## Customizing Job Matching Keywords
 
@@ -58,6 +71,7 @@ Upon running the script, users are prompted to decide whether to use the default
 - **Entering Custom Keywords**: If opting for custom keywords, you'll be prompted to enter them separated by commas (e.g., Coordinator, Associate, GBV).
 
 By engaging with this interactive feature, you enhance the tool's utility, making your job search more targeted and efficient.
+
 
 ## Disclaimer
 
